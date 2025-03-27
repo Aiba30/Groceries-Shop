@@ -1,0 +1,23 @@
+.hero{
+	background: url('/src/assets/images/hero__background.png');
+	height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.title{
+	font-weight: 700;
+	font-size: 48px;
+}
+
+@media(max-width:600px){
+	.hero{
+		img{
+			display: none;
+		}
+	}
+	.title{
+		text-align: center;
+	}
+}

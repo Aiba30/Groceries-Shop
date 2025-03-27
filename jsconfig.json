@@ -1,0 +1,25 @@
+// {
+// 	"compilerOptions": {
+// 	  "baseUrl": "src",
+// 	  "paths": {
+// 		"@/*":["src/*"],
+// 		 "@components/*": ["components/*"],
+// 		 "@ui/*": ["ui/*"],
+// 		 "@routes/*": ["routes/*"],
+// 		 "@assets/*": ["assets/*"],
+// 		 "@store/*": ["store/*"]
+// 	  }
+// 	},
+// 	"include": ["src"]
+//  }
+
+{
+	"compilerOptions": {
+	  "baseUrl": "src",
+	  "paths": {
+		 "@/*": ["*"] // ✅ Работает для всех папок в src
+	  }
+	},
+	"include": ["src"]
+ }
+ 

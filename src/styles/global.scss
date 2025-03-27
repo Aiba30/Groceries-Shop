@@ -1,0 +1,22 @@
+@use './reset' as *;
+@use './variables' as *;
+@font-face {
+	font-family: Rubik;
+	src: url('/src/assets/fonts/Rubik/Rubik-VariableFont_wght.ttf');
+}
+#root{
+	height: 100%;
+}
+.wrapper{
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	font-family: Rubik,'san-serif';
+	color: var(--main-onsurface);
+}
+
+main{
+	flex: 1;
+	background: var(--light--pink);
+}

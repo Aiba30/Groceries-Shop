@@ -1,0 +1,23 @@
+.dropdown{
+	position: absolute;
+	top: 40px;
+	left: 0;
+	background: var(--white);
+	width: 100%;
+	padding: 10px;
+	box-shadow: 4px 8px 16px 0 rgba(112, 192, 91, 0.2);
+	border-radius: 4px;
+	border: 1px solid var(--main-secondary);
+	display: flex;
+	flex-direction: column;
+	li{
+		padding: 10px 5px;
+		border-radius: 4px;
+		font-size: 16px;
+	}
+}
+
+.active{
+	background: var(--grayscale---light);
+	color: var(--white);
+}
