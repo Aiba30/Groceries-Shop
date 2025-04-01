@@ -1,0 +1,161 @@
+.product{
+	padding-top: 24px;
+}
+.title{
+	font-weight: 700;
+	font-size: 36px;
+}
+.top{
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	margin-bottom: 20px;
+	&Btns{
+		display: flex;
+		align-items: center;
+		gap: 24px;
+		p{
+			font-size: 18px;
+		}
+	}
+}
+
+.bottom{
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	.image{
+		flex: 1;
+		max-width: 504px;
+		height: 366px;
+		background: var(--white);
+		position: relative;
+		img{
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+		span{
+			background: var(--orange);
+			color: var(--white);
+			border-radius: 4px;
+			padding: 4px 8px;
+			height: 32px;
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+	.content{
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		max-width: 376px;
+		gap: 30px;
+		.prices{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			.price{
+				display: flex;
+				flex-direction: column;
+				gap: 6px;
+				span:first-child{
+					font-size: 24px;
+					color:var(--grayscale---hardest)
+				}
+				span:last-child{
+					color: var(--grayscale---light);
+				}
+			}
+			.discountPrice{
+				display: flex;
+				flex-direction: column;
+				gap: 6px;
+				span:first-child{
+					font-weight: 700;
+					font-size: 36px;
+				}
+				span:last-child{
+					color: var(--grayscale---light);
+				}
+			}
+		}
+		button{
+			position: relative;
+			display: flex;
+			justify-content: center;
+			border-radius: 4px;
+			padding: 16px;
+			height: 60px;
+			font-size: 24px;
+			background: var(--orange);
+			color: var(--white);
+			img{
+				position: absolute;
+				top: 14px;
+				left: 16px;
+			}
+		}
+		.desc{
+			font-size: 18px;
+			line-height: 150%;
+			letter-spacing: 1px;
+			&::first-letter{
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+.sameProducts{
+	h3{
+		margin-bottom: 20px;
+	}
+}
+.productsWrap{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+
+@media(max-width:887px){
+	.productsWrap{
+		justify-content: center;
+	}
+}
+
+@media(max-width:680px){
+	.bottom{
+		flex-direction: column;
+		padding:0 30px 0 90px;
+		.image{
+			width: 248px;
+			height: 248px;
+		}
+		button{
+			width: 300px;
+		}
+	}
+}
+
+@media(max-width:480px){
+	.bottom{
+		align-items: center;
+		padding: 0;
+		.content{
+			align-items: center;
+			.desc{
+				text-align: center;
+			}
+		}
+	}
+	.topBtns{
+		p{
+			display: none;
+		}
+	}
+}

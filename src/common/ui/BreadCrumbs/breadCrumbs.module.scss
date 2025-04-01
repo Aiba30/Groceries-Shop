@@ -1,0 +1,10 @@
+.list{
+	display: flex;
+	gap: 8px;
+	span{
+		color: var(--grayscale---hard);
+	}
+}
+.link{
+	color: var(--main-onsurface);
+}

@@ -1,59 +1,57 @@
 import { useState } from "react";
 import Slider from "rc-slider";
 import "rc-slider/assets/index.css";
-
-export function Filter() {
-  const [priceRange, setPriceRange] = useState([0, 1000]);
-  const [minPrice, setMinPrice] = useState(priceRange[0]);
-  const [maxPrice, setMaxPrice] = useState(priceRange[1]);
+import styles from "./filter.module.scss";
+export function Filter({ onApply, onClear, initialRange }) {
+  const [priceRange, setPriceRange] = useState(initialRange);
 
   const handleSliderChange = (value) => {
     setPriceRange(value);
-    setMinPrice(value[0]);
-    setMaxPrice(value[1]);
   };
 
-  const applyFilter = () => {
-    // Здесь вы можете применить логику фильтрации по цене
-    console.log("Filter applied:", priceRange);
+  const handleApply = () => {
+    onApply(priceRange);
   };
 
-  const clearFilter = () => {
-    setPriceRange([0, 1000]);
-    setMinPrice(0);
-    setMaxPrice(1000);
+  const handleClear = () => {
+    setPriceRange(initialRange);
+    onClear();
   };
 
   return (
-    <div>
-      <h2>Фильтр по цене</h2>
-
-      <Slider
-        min={0}
-        max={1000}
-        range
-        step={10}
-        value={priceRange}
-        onChange={handleSliderChange}
-      />
-
-      <div>
-        <input
-          type="number"
-          value={minPrice}
-          onChange={(e) => setMinPrice(e.target.value)}
-        />
-        <span> - </span>
-        <input
-          type="number"
-          value={maxPrice}
-          onChange={(e) => setMaxPrice(e.target.value)}
+    <div className={styles.filter}>
+      <h5 className={styles.title}>Фильтр по цене</h5>
+      <div className={styles.priceRangeWrap}>
+        <p>Цена</p>
+        <div className={styles.inputsWrapper}>
+          <input
+            type="text"
+            value={priceRange[0]}
+            onChange={(e) =>
+              setPriceRange([Number(e.target.value), priceRange[1]])
+            }
+          />
+          <span> - </span>
+          <input
+            type="text"
+            value={priceRange[1]}
+            onChange={(e) =>
+              setPriceRange([priceRange[0], Number(e.target.value)])
+            }
+          />
+        </div>
+        <Slider
+          min={0}
+          max={600}
+          range
+          step={1}
+          value={priceRange}
+          onChange={handleSliderChange}
         />
       </div>
-
-      <div>
-        <button onClick={applyFilter}>Применить</button>
-        <button onClick={clearFilter}>Очистить</button>
+      <div className={styles.btnsWrap}>
+        <button onClick={handleApply}>Применить</button>
+        <button onClick={handleClear}>Очистить</button>
       </div>
     </div>
   );

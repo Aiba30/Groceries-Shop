@@ -1,23 +1,25 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./SearchInput.module.scss";
 import SearchIcon from "@/assets/icons/search.svg";
 import { Dropdown } from "@/common/ui/Dropdown";
-const suggestions = [
-  "Apple",
-  "Banana",
-  "Cherry",
-  "Grapes",
-  "Orange",
-  "Pineapple",
-  "Strawberry",
-];
+import { useGetProductsQuery } from "@/store/api/productsApi";
+import { useDispatch } from "react-redux";
+import { addProducts } from "@/store/slices/productsSlice";
+import { useNavigate } from "react-router-dom";
 export function SearchInput() {
   const [inputValue, setInputValue] = useState("");
   const [isOpen, setIsOpen] = useState(false);
   const [activeIndex, setActiveIndex] = useState(-1);
+  const { data: suggestions = [] } = useGetProductsQuery({});
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    dispatch(addProducts(suggestions));
+  }, [suggestions]);
 
   const filteredSuggestions = suggestions.filter((item) =>
-    item.toLowerCase().includes(inputValue.toLowerCase())
+    item.name.toLowerCase().includes(inputValue)
   );
 
   const handleChange = (e) => {
@@ -41,6 +43,7 @@ export function SearchInput() {
     } else if (e.key === "Enter" && activeIndex >= 0) {
       handleSelect(filteredSuggestions[activeIndex]);
       setActiveIndex(-1);
+      navigate(`/product/${filteredSuggestions[activeIndex].id}`);
     }
   };
   return (

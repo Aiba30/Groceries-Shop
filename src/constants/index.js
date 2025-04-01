@@ -55,4 +55,8 @@ export const categories = [
     id: 8,
     name: "Замороженные продукты",
   },
+  {
+    id: "",
+    name: "Все",
+  },
 ];

@@ -1,111 +1,770 @@
 {
-	"products": [
-    { "id": 1, "name": "Батон нарезной", "price": 35, "categoryId": 1, "isNew": true, "isOnSale": false, "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTerWBopNeWgEELRh0MoWTfDTEL6DSr2mwtbw&s" },
-    { "id": 2, "name": "Багет французский", "price": 45, "discountedPrice": 36, "categoryId": 1, "isNew": false, "isOnSale": true, "image": "" },
-    { "id": 3, "name": "Ржаной хлеб", "price": 40, "categoryId": 1, "isNew": false, "isOnSale": false, "image": "" },
-    { "id": 4, "name": "Булочка с корицей", "price": 50, "categoryId": 1, "isNew": true, "isOnSale": false, "image": "" },
-    { "id": 5, "name": "Чиабатта", "price": 60, "categoryId": 1, "isNew": false, "isOnSale": false, "image": "" },
-    { "id": 6, "name": "Пита", "price": 40, "categoryId": 1, "isNew": true, "isOnSale": false, "image": "" },
-    { "id": 7, "name": "Калач", "price": 70, "categoryId": 1, "isNew": false, "isOnSale": true, "discountedPrice": 60, "image": "" },
-    { "id": 8, "name": "Пшеничный хлеб", "price": 30, "categoryId": 1, "isNew": true, "isOnSale": false, "image": "" },
-    { "id": 9, "name": "Сдоба", "price": 55, "categoryId": 1, "isNew": false, "isOnSale": false, "image": "" },
-    { "id": 10, "name": "Булочка с маком", "price": 45, "categoryId": 1, "isNew": true, "isOnSale": true, "discountedPrice": 40, "image": "" },
-	 { "id": 11, "name": "Молоко 1 литр", "price": 60, "categoryId": 2, "isNew": true, "isOnSale": false, "image": "" },
-    { "id": 12, "name": "Сыр пармезан", "price": 150, "discountedPrice": 120, "categoryId": 2, "isNew": false, "isOnSale": true, "image": "" },
-    { "id": 13, "name": "Йогурт клубничный", "price": 50, "categoryId": 2, "isNew": true, "isOnSale": false, "image": "" },
-    { "id": 14, "name": "Кефир", "price": 50, "categoryId": 2, "isNew": true, "isOnSale": false, "image": "" },
-    { "id": 15, "name": "Творог", "price": 80, "categoryId": 2, "isNew": false, "isOnSale": false, "image": "" },
-    { "id": 16, "name": "Молоко 0.5 литра", "price": 45, "categoryId": 2, "isNew": false, "isOnSale": true, "discountedPrice": 40, "image": "" },
-    { "id": 17, "name": "Сметана", "price": 70, "categoryId": 2, "isNew": true, "isOnSale": false, "image": "" },
-    { "id": 18, "name": "Мороженое ванильное", "price": 80, "categoryId": 2, "isNew": false, "isOnSale": false, "image": "" },
-    { "id": 19, "name": "Сыр фета", "price": 130, "categoryId": 2, "isNew": true, "isOnSale": false, "image": "" },
-    { "id": 20, "name": "Плавленый сыр", "price": 90, "categoryId": 2, "isNew": false, "isOnSale": true, "discountedPrice": 80, "image": "" },
-	 { "id": 21, "name": "Колбаса докторская", "price": 200, "categoryId": 3, "isNew": false, "isOnSale": false, "image": "" },
-    { "id": 22, "name": "Ветчина", "price": 180, "discountedPrice": 162, "categoryId": 3, "isNew": true, "isOnSale": true, "image": "" },
-    { "id": 23, "name": "Роллы ассорти", "price": 350, "categoryId": 3, "isNew": true, "isOnSale": true, "image": "" },
-    { "id": 24, "name": "Мясо говядины", "price": 500, "categoryId": 3, "isNew": false, "isOnSale": false, "image": "" },
-    { "id": 25, "name": "Пельмени", "price": 150, "categoryId": 3, "isNew": true, "isOnSale": false, "image": "" },
-    { "id": 26, "name": "Котлеты из говядины", "price": 250, "categoryId": 3, "isNew": false, "isOnSale": false, "image": "" },
-    { "id": 27, "name": "Филе куриное", "price": 200, "categoryId": 3, "isNew": true, "isOnSale": false, "image": "" },
-    { "id": 28, "name": "Сосиски", "price": 120, "categoryId": 3, "isNew": false, "isOnSale": true, "discountedPrice": 100, "image": "" },
-    { "id": 29, "name": "Буженина", "price": 300, "categoryId": 3, "isNew": true, "isOnSale": false, "image": "" },
-    { "id": 30, "name": "Свиные ребра", "price": 450, "categoryId": 3, "isNew": false, "isOnSale": true, "discountedPrice": 400, "image": "" },
-	 { "id": 31, "name": "Огурцы свежие", "price": 70, "categoryId": 4, "isNew": true, "isOnSale": false, "image": "" },
-    { "id": 32, "name": "Помидоры черри", "price": 90, "discountedPrice": 72, "categoryId": 4, "isNew": false, "isOnSale": true, "image": "" },
-    { "id": 33, "name": "Морковь свежая", "price": 30, "categoryId": 4, "isNew": true, "isOnSale": false, "image": "" },
-    { "id": 34, "name": "Картошка", "price": 35, "categoryId": 4, "isNew": true, "isOnSale": false, "image": "" },
-    { "id": 35, "name": "Чеснок", "price": 120, "categoryId": 4, "isNew": false, "isOnSale": false, "image": "" },
-    { "id": 36, "name": "Лук репчатый", "price": 20, "categoryId": 4, "isNew": false, "isOnSale": true, "image": "" },
-    { "id": 37, "name": "Перец сладкий", "price": 40, "categoryId": 4, "isNew": false, "isOnSale": false, "image": "" },
-    { "id": 38, "name": "Кабачки", "price": 60, "categoryId": 4, "isNew": true, "isOnSale": false, "image": "" },
-    { "id": 39, "name": "Баклажаны", "price": 70, "categoryId": 4, "isNew": false, "isOnSale": true, "image": "" },
-    { "id": 40, "name": "Петрушка", "price": 15, "categoryId": 4, "isNew": true, "isOnSale": false, "image": "" },
-	 { "id": 41, "name": "Яблоко зелёное", "price": 40, "categoryId": 5, "isNew": true, "isOnSale": false, "image": "" },
-    { "id": 42, "name": "Банан", "price": 50, "categoryId": 5, "isNew": false, "isOnSale": false, "image": "" },
-    { "id": 43, "name": "Апельсин", "price": 60, "categoryId": 5, "isNew": true, "isOnSale": false, "image": "" },
-    { "id": 44, "name": "Киви", "price": 60, "categoryId": 5, "isNew": true, "isOnSale": false, "image": "" },
-    { "id": 45, "name": "Груша", "price": 50, "categoryId": 5, "isNew": false, "isOnSale": true, "image": "" },
-    { "id": 46, "name": "Манго", "price": 150, "categoryId": 5, "isNew": true, "isOnSale": false, "image": "" },
-    { "id": 47, "name": "Вишня", "price": 80, "categoryId": 5, "isNew": false, "isOnSale": false, "image": "" },
-    { "id": 48, "name": "Персик", "price": 120, "categoryId": 5, "isNew": true, "isOnSale": false, "image": "" },
-    { "id": 49, "name": "Слива", "price": 70, "categoryId": 5, "isNew": false, "isOnSale": true, "image": "" },
-    { "id": 50, "name": "Апельсин", "price": 110, "categoryId": 5, "isNew": true, "isOnSale": false, "image": "" },
-	 { "id": 51, "name": "Кока-Кола 0.5л", "price": 60, "categoryId": 6, "isNew": false, "isOnSale": true, "image": "" },
-    { "id": 52, "name": "Апельсиновый сок 1л", "price": 100, "categoryId": 6, "isNew": true, "isOnSale": false, "image": "" },
-    { "id": 53, "name": "Чай черный", "price": 120, "categoryId": 6, "isNew": false, "isOnSale": false, "image": "" },
-    { "id": 54, "name": "Чай зеленый", "price": 150, "categoryId": 6, "isNew": true, "isOnSale": false, "image": "" },
-    { "id": 55, "name": "Минеральная вода 1.5л", "price": 45, "categoryId": 6, "isNew": false, "isOnSale": true, "image": "" },
-    { "id": 56, "name": "Сок яблочный 1л", "price": 80, "categoryId": 6, "isNew": true, "isOnSale": false, "image": "" },
-    { "id": 57, "name": "Лимонад", "price": 70, "categoryId": 6, "isNew": false, "isOnSale": false, "image": "" },
-    { "id": 58, "name": "Морс клюквенный", "price": 90, "categoryId": 6, "isNew": true, "isOnSale": false, "image": "" },
-    { "id": 59, "name": "Энергетик", "price": 120, "categoryId": 6, "isNew": false, "isOnSale": false, "image": "" },
-    { "id": 60, "name": "Газировка лимонная 0.5л", "price": 50, "categoryId": 6, "isNew": true, "isOnSale": false, "image": "" },
-	 { "id": 61, "name": "Шоколад молочный", "price": 120, "categoryId": 7, "isNew": false, "isOnSale": true, "image": "" },
-    { "id": 62, "name": "Мармелад ассорти", "price": 110, "categoryId": 7, "isNew": true, "isOnSale": false, "image": "" },
-    { "id": 63, "name": "Конфеты карамельные", "price": 90, "categoryId": 7, "isNew": false, "isOnSale": true, "image": "" },
-    { "id": 64, "name": "Печенье овсяное", "price": 70, "categoryId": 7, "isNew": true, "isOnSale": false, "image": "" },
-    { "id": 65, "name": "Леденцы фруктовые", "price": 50, "categoryId": 7, "isNew": false, "isOnSale": true, "image": "" },
-    { "id": 66, "name": "Торт шоколадный", "price": 350, "categoryId": 7, "isNew": true, "isOnSale": false, "image": "" },
-    { "id": 67, "name": "Пирог с яблоками", "price": 150, "categoryId": 7, "isNew": false, "isOnSale": false, "image": "" },
-    { "id": 68, "name": "Жевательные конфеты", "price": 80, "categoryId": 7, "isNew": true, "isOnSale": false, "image": "" },
-    { "id": 69, "name": "Мороженое ванильное", "price": 80, "categoryId": 7, "isNew": true, "isOnSale": false, "image": "" },
-    { "id": 70, "name": "Печенье с шоколадной крошкой", "price": 60, "categoryId": 7, "isNew": false, "isOnSale": true, "image": "" },
-	 { "id": 71, "name": "Мороженое ванильное", "price": 80, "categoryId": 8, "isNew": true, "isOnSale": false, "image": "" },
-    { "id": 72, "name": "Замороженные овощи", "price": 120, "categoryId": 8, "isNew": false, "isOnSale": true, "image": "" },
-    { "id": 73, "name": "Пельмени", "price": 150, "categoryId": 8, "isNew": false, "isOnSale": false, "image": "" },
-    { "id": 74, "name": "Котлеты куриные", "price": 200, "categoryId": 8, "isNew": true, "isOnSale": false, "image": "" },
-    { "id": 75, "name": "Мороженое шоколадное", "price": 90, "categoryId": 8, "isNew": false, "isOnSale": true, "image": "" },
-    { "id": 76, "name": "Гамбургеры замороженные", "price": 180, "categoryId": 8, "isNew": true, "isOnSale": false, "image": "" },
-    { "id": 77, "name": "Куриные ножки замороженные", "price": 220, "categoryId": 8, "isNew": false, "isOnSale": true, "image": "" },
-    { "id": 78, "name": "Мороженое с фруктами", "price": 95, "categoryId": 8, "isNew": true, "isOnSale": false, "image": "" },
-    { "id": 79, "name": "Замороженные креветки", "price": 400, "categoryId": 8, "isNew": false, "isOnSale": false, "image": "" },
-    { "id": 80, "name": "Замороженные пиццы", "price": 350, "categoryId": 8, "isNew": true, "isOnSale": false, "image": "" }
+  "products": [
+    {
+      "id": "1",
+      "name": "Батон нарезной",
+		"description":"мягкий и воздушный хлеб с тонкой корочкой, идеально подходит для бутербродов и тостов.",
+      "price": 35,
+      "categoryId": 1,
+      "isNew": true,
+      "isOnSale": false,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTerWBopNeWgEELRh0MoWTfDTEL6DSr2mwtbw&s"
+    },
+    {
+      "id": "2",
+      "name": "Багет французский",
+		"description":"классический хрустящий багет с нежным мякишем, отлично дополняет супы и закуски.",
+      "price": 45,
+      "discountedPrice": 36,
+      "categoryId": 1,
+      "isNew": false,
+      "isOnSale": true,
+      "image": ""
+    },
+    {
+      "id": "3",
+      "name": "Ржаной хлеб",
+		"description":"ароматный и полезный хлеб с насыщенным вкусом, богат клетчаткой и микроэлементами.",
+      "price": 40,
+      "categoryId": 1,
+      "isNew": false,
+      "isOnSale": false,
+      "image": ""
+    },
+    {
+      "id": "4",
+      "name": "Булочка с корицей",
+		"description":"пышная выпечка с пряным коричным ароматом, идеальное угощение к чаю или кофе.",
+      "price": 50,
+      "categoryId": 1,
+      "isNew": true,
+      "isOnSale": false,
+      "image": ""
+    },
+    {
+      "id": "5",
+      "name": "Чиабатта",
+      "price": 60,
+      "categoryId": 1,
+      "isNew": false,
+      "isOnSale": false,
+      "image": ""
+    },
+    {
+      "id": "6",
+      "name": "Пита",
+      "price": 40,
+      "categoryId": 1,
+      "isNew": true,
+      "isOnSale": false,
+      "image": ""
+    },
+    {
+      "id": "7",
+      "name": "Калач",
+      "price": 70,
+      "categoryId": 1,
+      "isNew": false,
+      "isOnSale": true,
+      "discountedPrice": 60,
+      "image": ""
+    },
+    {
+      "id": "8",
+      "name": "Пшеничный хлеб",
+      "price": 30,
+      "categoryId": 1,
+      "isNew": true,
+      "isOnSale": false,
+      "image": ""
+    },
+    {
+      "id": "9",
+      "name": "Сдоба",
+      "price": 55,
+      "categoryId": 1,
+      "isNew": false,
+      "isOnSale": false,
+      "image": ""
+    },
+    {
+      "id": "10",
+      "name": "Булочка с маком",
+      "price": 45,
+      "categoryId": 1,
+      "isNew": true,
+      "isOnSale": true,
+      "discountedPrice": 40,
+      "image": ""
+    },
+    {
+      "id": "11",
+      "name": "Молоко 1 литр",
+      "price": 60,
+      "categoryId": 2,
+      "isNew": true,
+      "isOnSale": false,
+      "image": ""
+    },
+    {
+      "id": "12",
+      "name": "Сыр пармезан",
+      "price": 150,
+      "discountedPrice": 120,
+      "categoryId": 2,
+      "isNew": false,
+      "isOnSale": true,
+      "image": ""
+    },
+    {
+      "id": "13",
+      "name": "Йогурт клубничный",
+      "price": 50,
+      "categoryId": 2,
+      "isNew": true,
+      "isOnSale": false,
+      "image": ""
+    },
+    {
+      "id": "14",
+      "name": "Кефир",
+      "price": 50,
+      "categoryId": 2,
+      "isNew": true,
+      "isOnSale": false,
+      "image": ""
+    },
+    {
+      "id": "15",
+      "name": "Творог",
+      "price": 80,
+      "categoryId": 2,
+      "isNew": false,
+      "isOnSale": false,
+      "image": ""
+    },
+    {
+      "id": "16",
+      "name": "Молоко 0.5 литра",
+      "price": 45,
+      "categoryId": 2,
+      "isNew": false,
+      "isOnSale": true,
+      "discountedPrice": 40,
+      "image": ""
+    },
+    {
+      "id": "17",
+      "name": "Сметана",
+      "price": 70,
+      "categoryId": 2,
+      "isNew": true,
+      "isOnSale": false,
+      "image": ""
+    },
+    {
+      "id": "18",
+      "name": "Мороженое ванильное",
+      "price": 80,
+      "categoryId": 2,
+      "isNew": false,
+      "isOnSale": false,
+      "image": ""
+    },
+    {
+      "id": "19",
+      "name": "Сыр фета",
+      "price": 130,
+      "categoryId": 2,
+      "isNew": true,
+      "isOnSale": false,
+      "image": ""
+    },
+    {
+      "id": "20",
+      "name": "Плавленый сыр",
+      "price": 90,
+      "categoryId": 2,
+      "isNew": false,
+      "isOnSale": true,
+      "discountedPrice": 80,
+      "image": ""
+    },
+    {
+      "id": "21",
+      "name": "Колбаса докторская",
+      "price": 200,
+      "categoryId": 3,
+      "isNew": false,
+      "isOnSale": false,
+      "image": ""
+    },
+    {
+      "id": "22",
+      "name": "Ветчина",
+      "price": 180,
+      "discountedPrice": 162,
+      "categoryId": 3,
+      "isNew": true,
+      "isOnSale": true,
+      "image": ""
+    },
+    {
+      "id": "23",
+      "name": "Роллы ассорти",
+      "price": 350,
+      "categoryId": 3,
+      "isNew": true,
+      "isOnSale": true,
+      "image": ""
+    },
+    {
+      "id": "24",
+      "name": "Мясо говядины",
+      "price": 500,
+      "categoryId": 3,
+      "isNew": false,
+      "isOnSale": false,
+      "image": ""
+    },
+    {
+      "id": "25",
+      "name": "Пельмени",
+      "price": 150,
+      "categoryId": 3,
+      "isNew": true,
+      "isOnSale": false,
+      "image": ""
+    },
+    {
+      "id": "26",
+      "name": "Котлеты из говядины",
+      "price": 250,
+      "categoryId": 3,
+      "isNew": false,
+      "isOnSale": false,
+      "image": ""
+    },
+    {
+      "id": "27",
+      "name": "Филе куриное",
+      "price": 200,
+      "categoryId": 3,
+      "isNew": true,
+      "isOnSale": false,
+      "image": ""
+    },
+    {
+      "id": "28",
+      "name": "Сосиски",
+      "price": 120,
+      "categoryId": 3,
+      "isNew": false,
+      "isOnSale": true,
+      "discountedPrice": 100,
+      "image": ""
+    },
+    {
+      "id": "29",
+      "name": "Буженина",
+      "price": 300,
+      "categoryId": 3,
+      "isNew": true,
+      "isOnSale": false,
+      "image": ""
+    },
+    {
+      "id": "30",
+      "name": "Свиные ребра",
+      "price": 450,
+      "categoryId": 3,
+      "isNew": false,
+      "isOnSale": true,
+      "discountedPrice": 400,
+      "image": ""
+    },
+    {
+      "id": "31",
+      "name": "Огурцы свежие",
+      "price": 70,
+      "categoryId": 4,
+      "isNew": true,
+      "isOnSale": false,
+      "image": ""
+    },
+    {
+      "id": "32",
+      "name": "Помидоры черри",
+      "price": 90,
+      "discountedPrice": 72,
+      "categoryId": 4,
+      "isNew": false,
+      "isOnSale": true,
+      "image": ""
+    },
+    {
+      "id": "33",
+      "name": "Морковь свежая",
+      "price": 30,
+      "categoryId": 4,
+      "isNew": true,
+      "isOnSale": false,
+      "image": ""
+    },
+    {
+      "id": "34",
+      "name": "Картошка",
+      "price": 35,
+      "categoryId": 4,
+      "isNew": true,
+      "isOnSale": false,
+      "image": ""
+    },
+    {
+      "id": "35",
+      "name": "Чеснок",
+      "price": 120,
+      "categoryId": 4,
+      "isNew": false,
+      "isOnSale": false,
+      "image": ""
+    },
+    {
+      "id": "36",
+      "name": "Лук репчатый",
+      "price": 20,
+      "categoryId": 4,
+      "isNew": false,
+      "isOnSale": true,
+      "image": ""
+    },
+    {
+      "id": "37",
+      "name": "Перец сладкий",
+      "price": 40,
+      "categoryId": 4,
+      "isNew": false,
+      "isOnSale": false,
+      "image": ""
+    },
+    {
+      "id": "38",
+      "name": "Кабачки",
+      "price": 60,
+      "categoryId": 4,
+      "isNew": true,
+      "isOnSale": false,
+      "image": ""
+    },
+    {
+      "id": "39",
+      "name": "Баклажаны",
+      "price": 70,
+      "categoryId": 4,
+      "isNew": false,
+      "isOnSale": true,
+      "image": ""
+    },
+    {
+      "id": "40",
+      "name": "Петрушка",
+      "price": 15,
+      "categoryId": 4,
+      "isNew": true,
+      "isOnSale": false,
+      "image": ""
+    },
+    {
+      "id": "41",
+      "name": "Яблоко зелёное",
+      "price": 40,
+      "categoryId": 5,
+      "isNew": true,
+      "isOnSale": false,
+      "image": ""
+    },
+    {
+      "id": "42",
+      "name": "Банан",
+      "price": 50,
+      "categoryId": 5,
+      "isNew": false,
+      "isOnSale": false,
+      "image": ""
+    },
+    {
+      "id": "43",
+      "name": "Апельсин",
+      "price": 60,
+      "categoryId": 5,
+      "isNew": true,
+      "isOnSale": false,
+      "image": ""
+    },
+    {
+      "id": "44",
+      "name": "Киви",
+      "price": 60,
+      "categoryId": 5,
+      "isNew": true,
+      "isOnSale": false,
+      "image": ""
+    },
+    {
+      "id": "45",
+      "name": "Груша",
+      "price": 50,
+      "categoryId": 5,
+      "isNew": false,
+      "isOnSale": true,
+      "image": ""
+    },
+    {
+      "id": "46",
+      "name": "Манго",
+      "price": 150,
+      "categoryId": 5,
+      "isNew": true,
+      "isOnSale": false,
+      "image": ""
+    },
+    {
+      "id": "47",
+      "name": "Вишня",
+      "price": 80,
+      "categoryId": 5,
+      "isNew": false,
+      "isOnSale": false,
+      "image": ""
+    },
+    {
+      "id": "48",
+      "name": "Персик",
+      "price": 120,
+      "categoryId": 5,
+      "isNew": true,
+      "isOnSale": false,
+      "image": ""
+    },
+    {
+      "id": "49",
+      "name": "Слива",
+      "price": 70,
+      "categoryId": 5,
+      "isNew": false,
+      "isOnSale": true,
+      "image": ""
+    },
+    {
+      "id": "50",
+      "name": "Апельсин",
+      "price": 110,
+      "categoryId": 5,
+      "isNew": true,
+      "isOnSale": false,
+      "image": ""
+    },
+    {
+      "id": "51",
+      "name": "Кока-Кола 0.5л",
+      "price": 60,
+      "categoryId": 6,
+      "isNew": false,
+      "isOnSale": true,
+      "image": ""
+    },
+    {
+      "id": "52",
+      "name": "Апельсиновый сок 1л",
+      "price": 100,
+      "categoryId": 6,
+      "isNew": true,
+      "isOnSale": false,
+      "image": ""
+    },
+    {
+      "id": "53",
+      "name": "Чай черный",
+      "price": 120,
+      "categoryId": 6,
+      "isNew": false,
+      "isOnSale": false,
+      "image": ""
+    },
+    {
+      "id": "54",
+      "name": "Чай зеленый",
+      "price": 150,
+      "categoryId": 6,
+      "isNew": true,
+      "isOnSale": false,
+      "image": ""
+    },
+    {
+      "id": "55",
+      "name": "Минеральная вода 1.5л",
+      "price": 45,
+      "categoryId": 6,
+      "isNew": false,
+      "isOnSale": true,
+      "image": ""
+    },
+    {
+      "id": "56",
+      "name": "Сок яблочный 1л",
+      "price": 80,
+      "categoryId": 6,
+      "isNew": true,
+      "isOnSale": false,
+      "image": ""
+    },
+    {
+      "id": "57",
+      "name": "Лимонад",
+      "price": 70,
+      "categoryId": 6,
+      "isNew": false,
+      "isOnSale": false,
+      "image": ""
+    },
+    {
+      "id": "58",
+      "name": "Морс клюквенный",
+      "price": 90,
+      "categoryId": 6,
+      "isNew": true,
+      "isOnSale": false,
+      "image": ""
+    },
+    {
+      "id": "59",
+      "name": "Энергетик",
+      "price": 120,
+      "categoryId": 6,
+      "isNew": false,
+      "isOnSale": false,
+      "image": ""
+    },
+    {
+      "id": "60",
+      "name": "Газировка лимонная 0.5л",
+      "price": 50,
+      "categoryId": 6,
+      "isNew": true,
+      "isOnSale": false,
+      "image": ""
+    },
+    {
+      "id": "61",
+      "name": "Шоколад молочный",
+      "price": 120,
+      "categoryId": 7,
+      "isNew": false,
+      "isOnSale": true,
+      "image": ""
+    },
+    {
+      "id": "62",
+      "name": "Мармелад ассорти",
+      "price": 110,
+      "categoryId": 7,
+      "isNew": true,
+      "isOnSale": false,
+      "image": ""
+    },
+    {
+      "id": "63",
+      "name": "Конфеты карамельные",
+      "price": 90,
+      "categoryId": 7,
+      "isNew": false,
+      "isOnSale": true,
+      "image": ""
+    },
+    {
+      "id": "64",
+      "name": "Печенье овсяное",
+      "price": 70,
+      "categoryId": 7,
+      "isNew": true,
+      "isOnSale": false,
+      "image": ""
+    },
+    {
+      "id": "65",
+      "name": "Леденцы фруктовые",
+      "price": 50,
+      "categoryId": 7,
+      "isNew": false,
+      "isOnSale": true,
+      "image": ""
+    },
+    {
+      "id": "66",
+      "name": "Торт шоколадный",
+      "price": 350,
+      "categoryId": 7,
+      "isNew": true,
+      "isOnSale": false,
+      "image": ""
+    },
+    {
+      "id": "67",
+      "name": "Пирог с яблоками",
+      "price": 150,
+      "categoryId": 7,
+      "isNew": false,
+      "isOnSale": false,
+      "image": ""
+    },
+    {
+      "id": "68",
+      "name": "Жевательные конфеты",
+      "price": 80,
+      "categoryId": 7,
+      "isNew": true,
+      "isOnSale": false,
+      "image": ""
+    },
+    {
+      "id": "69",
+      "name": "Мороженое ванильное",
+      "price": 80,
+      "categoryId": 7,
+      "isNew": true,
+      "isOnSale": false,
+      "image": ""
+    },
+    {
+      "id": "70",
+      "name": "Печенье с шоколадной крошкой",
+      "price": 60,
+      "categoryId": 7,
+      "isNew": false,
+      "isOnSale": true,
+      "image": ""
+    },
+    {
+      "id": "71",
+      "name": "Мороженое ванильное",
+      "price": 80,
+      "categoryId": 8,
+      "isNew": true,
+      "isOnSale": false,
+      "image": ""
+    },
+    {
+      "id": "72",
+      "name": "Замороженные овощи",
+      "price": 120,
+      "categoryId": 8,
+      "isNew": false,
+      "isOnSale": true,
+      "image": ""
+    },
+    {
+      "id": "73",
+      "name": "Пельмени",
+      "price": 150,
+      "categoryId": 8,
+      "isNew": false,
+      "isOnSale": false,
+      "image": ""
+    },
+    {
+      "id": "74",
+      "name": "Котлеты куриные",
+      "price": 200,
+      "categoryId": 8,
+      "isNew": true,
+      "isOnSale": false,
+      "image": ""
+    },
+    {
+      "id": "75",
+      "name": "Мороженое шоколадное",
+      "price": 90,
+      "categoryId": 8,
+      "isNew": false,
+      "isOnSale": true,
+      "image": ""
+    },
+    {
+      "id": "76",
+      "name": "Гамбургеры замороженные",
+      "price": 180,
+      "categoryId": 8,
+      "isNew": true,
+      "isOnSale": false,
+      "image": ""
+    },
+    {
+      "id": "77",
+      "name": "Куриные ножки замороженные",
+      "price": 220,
+      "categoryId": 8,
+      "isNew": false,
+      "isOnSale": true,
+      "image": ""
+    },
+    {
+      "id": "78",
+      "name": "Мороженое с фруктами",
+      "price": 95,
+      "categoryId": 8,
+      "isNew": true,
+      "isOnSale": false,
+      "image": ""
+    },
+    {
+      "id": "79",
+      "name": "Замороженные креветки",
+      "price": 400,
+      "categoryId": 8,
+      "isNew": false,
+      "isOnSale": false,
+      "image": ""
+    },
+    {
+      "id": "80",
+      "name": "Замороженные пиццы",
+      "price": 350,
+      "categoryId": 8,
+      "isNew": true,
+      "isOnSale": false,
+      "image": ""
+    }
   ],
-
-
-	"cart": [
-	  { "id": 1, "productId": 2, "quantity": 2 },
-	  { "id": 2, "productId": 5, "quantity": 1 },
-	  { "id": 3, "productId": 10, "quantity": 3 }
-	],
-	"favorites": [
-	  { "id": 1, "productId": 1 },
-	  { "id": 2, "productId": 7 },
-	  { "id": 3, "productId": 11 }
-	],
-	"orders": [
-	  { "id": 1, "userId": 1, "products": [{ "productId": 3, "quantity": 1 }, { "productId": 6, "quantity": 2 }], "date": "2025-03-10" },
-	  { "id": 2, "userId": 2, "products": [{ "productId": 4, "quantity": 3 }, { "productId": 12, "quantity": 2 }], "date": "2025-03-15" }
-	],
-	"users": [
-	  { "id": 1, "username": "user1", "password": "12345", "email": "user1@example.com" },
-	  { "id": 2, "username": "user2", "password": "qwerty", "email": "user2@example.com" }
-	],
-	"jobs": [
-	  { "id": 1, "title": "Frontend Developer", "description": "Ищем разработчика на React для работы над проектом интернет-магазина.", "salary": "от 1200$" },
-	  { "id": 2, "title": "Backend Developer", "description": "Требуется разработчик на Node.js с опытом работы с REST API.", "salary": "от 1500$" },
-	  { "id": 3, "title": "UI/UX Designer", "description": "Нужен дизайнер с опытом работы с Figma и Adobe XD.", "salary": "от 1000$" },
-	  { "id": 4, "title": "Product Manager", "description": "Требуется опытный менеджер для координации работы команды.", "salary": "от 1800$" },
-	  { "id": 5, "title": "QA Engineer", "description": "Ищем тестировщика для покрытия проекта юнит-тестами.", "salary": "от 1300$" }
-	]
- }
+  "jobs": [
+    {
+      "id": "1",
+      "title": "Frontend Developer",
+      "description": "Ищем разработчика на React для работы над проектом интернет-магазина.",
+      "salary": "от 1200$"
+    },
+    {
+      "id": "2",
+      "title": "Backend Developer",
+      "description": "Требуется разработчик на Node.js с опытом работы с REST API.",
+      "salary": "от 1500$"
+    },
+    {
+      "id": "3",
+      "title": "UI/UX Designer",
+      "description": "Нужен дизайнер с опытом работы с Figma и Adobe XD.",
+      "salary": "от 1000$"
+    },
+    {
+      "id": "4",
+      "title": "Product Manager",
+      "description": "Требуется опытный менеджер для координации работы команды.",
+      "salary": "от 1800$"
+    },
+    {
+      "id": "5",
+      "title": "QA Engineer",
+      "description": "Ищем тестировщика для покрытия проекта юнит-тестами.",
+      "salary": "от 1300$"
+    }
+  ]
+}

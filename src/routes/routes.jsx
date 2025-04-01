@@ -4,6 +4,7 @@ import { Home } from "@/pages/Home";
 import { Layout } from "@/layouts/Layout";
 import { Category } from "@/pages/Category";
 import { NotFound } from "@/pages/NotFound";
+import { ProductDetail } from "@/pages/ProductDetail";
 
 export const routes = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ export const routes = createBrowserRouter([
       {
         path: ROUTER_PATHS.categoryDetail,
         element: <Category />,
+      },
+      {
+        path: ROUTER_PATHS.product,
+        element: <ProductDetail />,
       },
     ],
   },

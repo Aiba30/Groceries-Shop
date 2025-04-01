@@ -6,14 +6,19 @@ import {
   useGetSaleProductsQuery,
 } from "@/store/api/productsApi";
 export function Products() {
-  const { data: saleProducts } = useGetSaleProductsQuery({
+  const { data: salesRes, isLoading: isSalesLoading } = useGetSaleProductsQuery(
+    {
+      page: 1,
+      perPage: 4,
+    }
+  );
+  const saleProducts = salesRes?.data || [];
+
+  const { data: newRes, isLoading: isNewLoading } = useGetNewProductsQuery({
     page: 1,
     perPage: 4,
   });
-  const { data: newProducts } = useGetNewProductsQuery({
-    page: 1,
-    perPage: 4,
-  });
+  const newProducts = newRes?.data || [];
   return (
     <section className={styles.products}>
       <div>
@@ -24,17 +29,24 @@ export function Products() {
           </Link>
         </div>
         <div className={styles.productWrapper}>
-          {saleProducts?.map((product) => {
-            return (
-              <ProductCard
-                key={product.id}
-                image={product.image}
-                price={product.price}
-                discountedPrice={product.discountedPrice}
-                name={product.name}
-              />
-            );
-          })}
+          {isSalesLoading ? (
+            <p>загузка...</p>
+          ) : saleProducts.length ? (
+            saleProducts.map((product) => {
+              return (
+                <ProductCard
+                  key={product.id}
+                  id={product.id}
+                  image={product.image}
+                  price={product.price}
+                  discountedPrice={product.discountedPrice}
+                  name={product.name}
+                />
+              );
+            })
+          ) : (
+            <p>Акций пока нет</p>
+          )}
         </div>
       </div>
       <div>
@@ -45,17 +57,24 @@ export function Products() {
           </Link>
         </div>
         <div className={styles.productWrapper}>
-          {newProducts?.map((product) => {
-            return (
-              <ProductCard
-                key={product.id}
-                image={product.image}
-                price={product.price}
-                discountedPrice={product.discountedPrice}
-                name={product.name}
-              />
-            );
-          })}
+          {isNewLoading ? (
+            <p>загузка...</p>
+          ) : newProducts.length ? (
+            newProducts.map((product) => {
+              return (
+                <ProductCard
+                  key={product.id}
+                  id={product.id}
+                  image={product.image}
+                  price={product.price}
+                  discountedPrice={product.discountedPrice}
+                  name={product.name}
+                />
+              );
+            })
+          ) : (
+            <p>Новых товаров пока нет</p>
+          )}
         </div>
       </div>
     </section>
