@@ -1,11 +1,22 @@
-.title{
-	font-size: 60px;
-	font-weight: 700;
-   color: red;
-}
-.error{
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
+.notFound {
+	text-align: center;
+	padding: 2rem;
+ 
+	img {
+	  max-width: 300px;
+	  margin-bottom: 1rem;
+	}
+ 
+	h2 {
+	  font-size: 24px;
+	  margin: 1rem 0;
+	}
+ 
+	p {
+	  color: #666;
+	  cursor: pointer;
+	  &:hover{
+		text-decoration: underline;
+	  }
+	}
+ }

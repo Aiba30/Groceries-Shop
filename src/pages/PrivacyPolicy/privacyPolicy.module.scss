@@ -1,0 +1,44 @@
+.policyContainer {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 40px 20px;
+	font-size: 16px;
+	line-height: 1.6;
+	color: #333;
+ }
+ 
+ .heading {
+	font-size: 28px;
+	font-weight: 700;
+	margin-bottom: 32px;
+	text-align: center;
+ }
+ 
+ .subheading {
+	font-size: 20px;
+	font-weight: 600;
+	margin-top: 32px;
+	margin-bottom: 12px;
+ }
+ 
+ ul {
+	padding-left: 20px;
+	margin-bottom: 16px;
+ 
+	li {
+	  list-style-type: disc;
+	  margin-bottom: 8px;
+	}
+ }
+ 
+ p {
+	margin-bottom: 16px;
+ }
+ 
+ .updatedDate {
+	font-size: 14px;
+	color: #777;
+	margin-top: 40px;
+	text-align: right;
+ }
+ 

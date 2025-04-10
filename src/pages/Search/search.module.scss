@@ -1,0 +1,37 @@
+.main{
+	padding: 20px 0;
+}
+.finded{
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	margin-top: 40px;
+	h2{
+		font-size: 36px;
+		font-weight: 700;
+	}
+}
+.products{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+
+.empty {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 3rem 1rem;
+	text-align: center;
+ 
+	img {
+	  width: 200px;
+	  margin-bottom: 1rem;
+	}
+ 
+	p {
+	  color: #777;
+	  font-size: 18px;
+	}
+ }

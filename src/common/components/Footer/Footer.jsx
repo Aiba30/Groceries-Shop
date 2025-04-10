@@ -3,13 +3,11 @@ import FooterLogo from "@/assets/icons/footer_logo.svg";
 import IgIcon from "@/assets/icons/instagram.svg";
 import FcIcon from "@/assets/icons/facebook.svg";
 import VkIcon from "@/assets/icons/vkontakte.svg";
-import PhoneIcon from "@/assets/icons/phone.svg";
 import styles from "./footer.module.scss";
 import { AppContainer } from "@/layouts/AppContainer";
-import HeartIcon from "@/assets/icons/heart.svg";
-import OrderIcon from "@/assets/icons/order.svg";
-import CartIcon from "@/assets/icons/cart.svg";
 import { ROUTER_PATHS } from "@/routes/routerPaths";
+import { IconsNav } from "../IconsNav";
+import { Phone } from "@/common/ui/Phone";
 export function Footer() {
   const navigate = useNavigate();
   return (
@@ -25,19 +23,44 @@ export function Footer() {
             <nav>
               <ul>
                 <li>
-                  <NavLink>О компании</NavLink>
+                  <NavLink
+                    className={({ isActive }) =>
+                      isActive ? styles.active : ""
+                    }
+                    to={ROUTER_PATHS.about}
+                  >
+                    О компании
+                  </NavLink>
                 </li>
                 <li>
-                  <NavLink>Контакты</NavLink>
+                  <NavLink
+                    className={({ isActive }) =>
+                      isActive ? styles.active : ""
+                    }
+                    to={ROUTER_PATHS.contacts}
+                  >
+                    Контакты
+                  </NavLink>
                 </li>
                 <li>
-                  <NavLink>Вакансии</NavLink>
+                  <NavLink
+                    className={({ isActive }) =>
+                      isActive ? styles.active : ""
+                    }
+                    to={ROUTER_PATHS.jobs}
+                  >
+                    Вакансии
+                  </NavLink>
                 </li>
                 <li>
-                  <NavLink>Статьи</NavLink>
-                </li>
-                <li>
-                  <NavLink>Политика обработки персональных данных</NavLink>
+                  <NavLink
+                    className={({ isActive }) =>
+                      isActive ? styles.active : ""
+                    }
+                    to={ROUTER_PATHS.privacyPolicy}
+                  >
+                    Политика обработки персональных данных
+                  </NavLink>
                 </li>
               </ul>
             </nav>
@@ -54,19 +77,12 @@ export function Footer() {
                 <img src={FcIcon} alt="facebook" />
               </Link>
             </div>
-            <div>
-              <Link to="tel:8 800 777 33 33">
-                <img src={PhoneIcon} alt="phone" />
-              </Link>
-              <Link to="tel:8 800 777 33 33">8 800 777 33 33</Link>
-            </div>
+            <Phone number="8 800 777 33 33" link="tel:8 800 777 33 33" />
           </div>
         </div>
       </AppContainer>
       <div className={styles.footerNav}>
-        <img src={HeartIcon} alt="heart-icon" />
-        <img src={OrderIcon} alt="order-icon" />
-        <img src={CartIcon} alt="cart-icon" />
+        <IconsNav />
       </div>
     </footer>
   );

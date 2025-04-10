@@ -8,6 +8,7 @@ export function Articles() {
         return (
           <Article
             key={article.id}
+            id={article.id}
             image={article.image}
             articleDate={article.articleDate}
             title={article.title}

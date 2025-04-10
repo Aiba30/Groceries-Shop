@@ -1,6 +1,8 @@
+import { useNavigate } from "react-router-dom";
 import styles from "./article.module.scss";
 
-export function Article({ image, articleDate, title, desc }) {
+export function Article({ id, image, articleDate, title, desc }) {
+  const navigate = useNavigate();
   return (
     <div className={styles.card}>
       <div>
@@ -10,7 +12,7 @@ export function Article({ image, articleDate, title, desc }) {
         <p>{articleDate}</p>
         <h6>{title}</h6>
         <p className={styles.description}>{desc}</p>
-        <button>Подробнее</button>
+        <button onClick={() => navigate(`/article/${id}`)}>Подробнее</button>
       </div>
     </div>
   );

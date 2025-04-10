@@ -5,7 +5,7 @@
 	border-radius: 4px;
 	box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.1);
 	width: 272px;
-	height: 309px;
+	min-height: 309px;
 	justify-content: space-around;
 	padding: 5px;
 }
@@ -34,20 +34,40 @@
 		font-size: 16px;
 	}
 	button{
-		border: 1px solid var(--main-secondary);
-		border-radius: 4px;
-		background: none;
-		height: 40px;
 		color: var(--main-secondary);
+		border: 1px solid var(--main-secondary);
+		background: none;
+		font-size: 16px;
 		transition: 0.5s;
+		border-radius: 4px;
+		height: 40px;
+	}
+	.btn{
 		&:hover{
 			background: var(--orange);
 			border: none;
 			color: var(--white);
 		}
 	}
+	.activeBtn{
+		font-weight: 700;
+		display: flex;
+		justify-content: center;
+		gap: 40px;
+		align-items: center;
+		align-items: center;
+		background: var(--main-secondary);
+		color: var(--white);
+		cursor:auto;
+		.increment,.decrement{
+			cursor: pointer;
+		}
+		span:nth-child(2){
+			font-size: 14px;
+			width: 25px;
+		}
+	}
 }
-
 .prices{
 	display: flex;
 	justify-content: space-between;

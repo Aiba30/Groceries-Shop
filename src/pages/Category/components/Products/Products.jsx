@@ -1,4 +1,5 @@
 import { ProductCard } from "@/common/components/ProductCard";
+import { Loader } from "@/common/ui/Loader";
 import { Paginate } from "@/common/ui/Paginate";
 import { NotFound } from "@/pages/NotFound";
 import { useGetProductsQuery } from "@/store/api/productsApi";
@@ -25,11 +26,11 @@ export function Products({ id, minPrice, maxPrice }) {
     setPage(targetPage);
   }
 
-  if (isLoading) return <p>Загрузка...</p>;
-  if (isError) return <NotFound />;
+  if (isLoading) return <Loader />;
+  if (isError) return <p style={{ fontSize: 18 }}>товары не загрузились</p>;
   return (
     <>
-      {products.length ? (
+      {products.length &&
         products.map((product) => {
           return (
             <ProductCard
@@ -41,10 +42,7 @@ export function Products({ id, minPrice, maxPrice }) {
               name={product.name}
             />
           );
-        })
-      ) : (
-        <p style={{ fontSize: 30, margin: "100px auto" }}>Ничего не найдено</p>
-      )}
+        })}
       <Paginate
         totalPages={totalPages}
         currentPage={page}

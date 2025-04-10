@@ -1,4 +1,5 @@
 import { ProductCard } from "@/common/components/ProductCard";
+import { Loader } from "@/common/ui/Loader";
 import { Paginate } from "@/common/ui/Paginate";
 import { useGetNewProductsQuery } from "@/store/api/productsApi";
 import { useState } from "react";
@@ -22,11 +23,11 @@ export function NewProducts({ minPrice, maxPrice }) {
     setPage(targetPage);
   }
 
-  if (isLoading) return <p>Загрузка...</p>;
-  if (isError) return <NotFound />;
+  if (isLoading) return <Loader />;
+  if (isError) return <p style={{ fontSize: 18 }}>товары не загрузились</p>;
   return (
     <>
-      {products.length ? (
+      {products.length &&
         products.map((product) => {
           return (
             <ProductCard
@@ -38,12 +39,7 @@ export function NewProducts({ minPrice, maxPrice }) {
               name={product.name}
             />
           );
-        })
-      ) : (
-        <p style={{ fontSize: 30, margin: "100px auto" }}>
-          Пока нет новых товаров
-        </p>
-      )}
+        })}
       <Paginate
         totalPages={totalPages}
         currentPage={page}

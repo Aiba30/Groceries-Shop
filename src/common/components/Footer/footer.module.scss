@@ -21,6 +21,15 @@
 			color: var(--main-onsurface);
 			font-size: 12px
 		}
+		.active{
+			color: var(--orange);
+		}
+	}
+	&>div:first-child{
+		nav{
+			padding-top: 20px;
+			line-height: 150%;
+		}
 	}
 	&>div{
 		display: flex;
@@ -29,16 +38,6 @@
 		div:first-child{
 			display: flex;
 			gap: 16px;
-		}
-		div:nth-child(2){
-			display: flex;
-			align-items: center;
-			gap: 8px;
-			*{
-				font-size: 16px;
-				color: var(--main-onsurface);
-				white-space: nowrap;
-			}
 		}
 	}
 
@@ -51,6 +50,7 @@
 	justify-content: center;
 	gap: 90px;
 }
+
 
 @media(max-width:800px){
 	.footerContainer{

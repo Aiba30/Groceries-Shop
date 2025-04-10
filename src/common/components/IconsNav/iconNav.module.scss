@@ -1,0 +1,40 @@
+.menu{
+	display: flex;
+	gap: 24px;
+	a{
+		color: var(--main-onsurface);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 9px;
+		position: relative;
+	}
+}
+
+.active{
+	color: var(--orange);
+}
+
+.cartCount{
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	top: -3px;
+	right: 9px;
+	background: var(--orange);
+	color: var(--white);
+	border-radius: 4px;
+	width: 12px;
+	height: 12px;
+	font-size: 11px;
+}
+
+@media(max-width:540px){
+	.menu{
+		width: 100%;
+		gap: 60px;
+		justify-content: center;
+	}
+}
+

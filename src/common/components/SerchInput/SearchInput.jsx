@@ -1,26 +1,27 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import styles from "./SearchInput.module.scss";
 import SearchIcon from "@/assets/icons/search.svg";
 import { Dropdown } from "@/common/ui/Dropdown";
 import { useGetProductsQuery } from "@/store/api/productsApi";
-import { useDispatch } from "react-redux";
-import { addProducts } from "@/store/slices/productsSlice";
 import { useNavigate } from "react-router-dom";
+import { ROUTER_PATHS } from "@/routes/routerPaths";
 export function SearchInput() {
   const [inputValue, setInputValue] = useState("");
   const [isOpen, setIsOpen] = useState(false);
   const [activeIndex, setActiveIndex] = useState(-1);
   const { data: suggestions = [] } = useGetProductsQuery({});
-  const dispatch = useDispatch();
   const navigate = useNavigate();
-
-  useEffect(() => {
-    dispatch(addProducts(suggestions));
-  }, [suggestions]);
 
   const filteredSuggestions = suggestions.filter((item) =>
     item.name.toLowerCase().includes(inputValue)
   );
+
+  const loopClick = () => {
+    if (inputValue.length) {
+      navigate(ROUTER_PATHS.search, { state: filteredSuggestions });
+      handleSelect("");
+    }
+  };
 
   const handleChange = (e) => {
     setInputValue(e.target.value);
@@ -44,6 +45,9 @@ export function SearchInput() {
       handleSelect(filteredSuggestions[activeIndex]);
       setActiveIndex(-1);
       navigate(`/product/${filteredSuggestions[activeIndex].id}`);
+    } else if (e.key === "Enter" && activeIndex < 0 && inputValue.length) {
+      navigate(ROUTER_PATHS.search, { state: filteredSuggestions });
+      handleSelect("");
     }
   };
   return (
@@ -56,7 +60,7 @@ export function SearchInput() {
         type="text"
       />
       <button className={styles.searchBtn}>
-        <img src={SearchIcon} alt="search-icon" />
+        <img onClick={loopClick} src={SearchIcon} alt="search-icon" />
       </button>
       {isOpen && (
         <Dropdown

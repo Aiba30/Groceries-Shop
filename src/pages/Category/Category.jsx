@@ -46,7 +46,6 @@ export function Category() {
       <AppContainer>
         <section className={styles.category}>
           <div className={styles.top}>
-            {/* <div>Главное - Категория</div> */}
             <Breadcrumbs items={breadcrumbs} />
             <h1>
               {category

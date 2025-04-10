@@ -5,6 +5,7 @@ import {
   useGetNewProductsQuery,
   useGetSaleProductsQuery,
 } from "@/store/api/productsApi";
+import { Loader } from "@/common/ui/Loader";
 export function Products() {
   const { data: salesRes, isLoading: isSalesLoading } = useGetSaleProductsQuery(
     {
@@ -15,7 +16,7 @@ export function Products() {
   const saleProducts = salesRes?.data || [];
 
   const { data: newRes, isLoading: isNewLoading } = useGetNewProductsQuery({
-    page: 1,
+    page: 3,
     perPage: 4,
   });
   const newProducts = newRes?.data || [];
@@ -30,7 +31,7 @@ export function Products() {
         </div>
         <div className={styles.productWrapper}>
           {isSalesLoading ? (
-            <p>загузка...</p>
+            <Loader />
           ) : saleProducts.length ? (
             saleProducts.map((product) => {
               return (
@@ -58,7 +59,7 @@ export function Products() {
         </div>
         <div className={styles.productWrapper}>
           {isNewLoading ? (
-            <p>загузка...</p>
+            <Loader />
           ) : newProducts.length ? (
             newProducts.map((product) => {
               return (

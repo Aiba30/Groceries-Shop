@@ -1,0 +1,41 @@
+.main{
+	padding: 24px 10px;
+	h1{
+		font-weight: 700;
+		font-size: 64px;
+		margin-bottom: 50px;
+	}
+}
+
+.quations{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 80px;
+	margin-bottom: 120px;
+	.contact{
+		display: flex;
+		flex-direction: column;
+		p{
+			display: flex;
+			align-items: center;
+			font-size: 24px;
+			gap: 8px;
+		}
+		a{
+			font-weight: 700;
+			font-size: 24px;
+			color: var(--main-onsurface);
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+@media(max-width:480px){
+	.main{
+		h1{
+			font-size: 50px;
+		}
+	}
+}

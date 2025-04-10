@@ -5,8 +5,8 @@ export function Breadcrumbs({ items = [] }) {
     <nav>
       <ul className={styles.list}>
         {items.map((item, index) => (
-          <li key={item.path}>
-            {index > 0 && <span>/</span>}
+          <li key={index}>
+            {index > 0 && <span>&gt;</span>}
             {index === items.length - 1 ? (
               <span>{item.label}</span>
             ) : (
