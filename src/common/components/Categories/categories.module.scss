@@ -29,9 +29,12 @@
 }
 
 @media(max-width:540px){
-	ul{
-		*{
-			font-size: 16px;
+	.menu{
+		top: 60px;
+		ul{
+			*{
+				font-size: 16px;
+			}
 		}
 	}
 }
